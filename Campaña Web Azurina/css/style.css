@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff; /* azul claro */
+}
+
+h1 {
+  color: #008080; /* turquesa */
+}
+
+.boton {
+  background-color: #008080; /* turquesa */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  background-color: #004d4d; /* turquesa oscuro */
+}
+
+.galeria {
+  display: flex;          /* Coloca las imágenes en fila */
+  flex-wrap: wrap;        /* Si no caben, bajan a otra fila */
+  gap: 20px;              /* Espacio entre imágenes */
+  justify-content: center;/* Centra las imágenes */
+}
+
+.galeria img {
+  max-width: 200px;       /* Todas del mismo ancho */
+  height: auto;           /* Mantiene proporción */
+  object-fit: cover;      /* Evita que se deformen */
+  border-radius: 8px;     /* Opcional: esquinas redondeadas */
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;   /* Espacio arriba */
+  margin-bottom: 40px;/* Espacio abajo */
+}
+
+.galeria img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
